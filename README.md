@@ -18,8 +18,8 @@ npm run dev
 ```
 npm run build
 ```
-
 ## Arrancar la aplicación ##
 ```
 npm run preview
 ```
+# Introducir netlify al conjunto de archivos#
