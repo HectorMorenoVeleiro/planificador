@@ -20,30 +20,3 @@ function saveAction() {
     list.appendChild(li); // añadimos el li a la lista
     input.value = ""; // limpiamos el input
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
