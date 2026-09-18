@@ -2,6 +2,7 @@
 // Lenguaje no tipado
 
 import dayjs from "dayjs";// importamos la librería dayjs para trabajar con fechas
+import "./style.css"
 
 // creamos boton para guardar la acción
 const boton = document.getElementById("Add");
