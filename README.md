@@ -23,7 +23,9 @@ npm run build
 npm run preview
 ```
 # Introducir netlify al conjunto de archivos#
-
+```
+npm i -g netlify-cli
+```
 # Instalar un linter y un formateador #
 ```
 npm i eslint prettier
