@@ -1,0 +1,28 @@
+[
+    {
+    "files": [
+        "**/*.js"
+    ],
+    "ignores": [
+        "node_modules/**",
+        "dist/**"
+    ],
+    "languageOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "eqeqeq": [
+            "error",
+            "always"
+        ],
+        "no-unused-vars": [
+            "warn",
+            {
+                "argsIgnorePattern": "^_"
+            }
+        ],
+        "no-var": "error",
+        "prefer-const": "error"
+    }
+]

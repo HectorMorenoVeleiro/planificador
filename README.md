@@ -22,6 +22,21 @@ npm run build
 ```
 npm run preview
 ```
+
+## Desplegar en Netlify ##
+La configuración está en `netlify.toml`. Al conectar el repositorio en Netlify, usa:
+
+```text
+Build command: npm run build
+Publish directory: dist
+```
+
+Para probarlo localmente con Netlify CLI:
+
+```bash
+npx netlify dev
+```
+
 # Introducir netlify al conjunto de archivos#
 ```
 npm i -g netlify-cli
