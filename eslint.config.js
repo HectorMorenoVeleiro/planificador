@@ -1,4 +1,4 @@
-[
+export default[
     {
     "files": [
         "**/*.js"
@@ -24,5 +24,6 @@
         ],
         "no-var": "error",
         "prefer-const": "error"
+    }
     }
 ]
