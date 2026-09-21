@@ -8,3 +8,4 @@ describe('formatear fecha', () => {
         expect(resultado).toBe("21/09/2026 14:33")
     })
 })
+// solucionar toda esta mierda
