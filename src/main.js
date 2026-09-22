@@ -15,10 +15,11 @@ boton.addEventListener("click", saveAction);
 
 // función que se ejecuta al hacer click en el boton
 function saveAction() {
-    formatearFecha(new Date());
-    const fechaHoy = dayjs().format("HH:mm"); // fecha de hoy formato DD/MM/YYYY
+    const fechaHoy = formatearFecha(new Date()); // fecha de hoy formato DD/MM/YYYY
     const li = document.createElement("li");// creamos un elemento li
     li.textContent = fechaHoy + ": " + input.value + " "; // valor del input y la fecha en el li
     list.appendChild(li); // añadimos el li a la lista
     input.value = ''; // limpiamos el input
 }
+
+//añadir confeti cuando se guarde un texto

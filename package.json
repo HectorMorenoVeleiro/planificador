@@ -18,13 +18,22 @@
   },
   "devDependencies": {
     "eslint": "^10.10.0",
-    "netlify-cli": "^27.8.0",
+    "netlify-cli": "^23.13.5",
     "prettier": "^3.9.8",
     "vite": "^8.3.0",
     "vitest": "^5.0.1"
   },
   "dependencies": {
+    "canvas-confetti": "^1.9.4",
     "dayjs": "^1.11.23",
-    "netlify": "^27.8.0"
+    "netlify": "^23.13.5"
+  },
+  "allowScripts": {
+    "esbuild@0.27.2": true,
+    "@parcel/watcher@2.5.1": true,
+    "fsevents@2.3.3": true,
+    "sharp@0.34.4": true,
+    "netlify@23.15.1": true,
+    "netlify-cli@23.15.1": true
   }
 }
