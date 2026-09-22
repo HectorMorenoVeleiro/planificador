@@ -4,3 +4,11 @@ export function formatearFecha(fecha) {
     const fechaFormateada =dayjs(fecha).format('DD/MM/YYYY HH:mm')
     return fechaFormateada
 }
+
+export function calcularPeso(valor) {
+    let peso;
+    if (minutos < 10) peso = 'bajo';
+    else if (minutos < 30) peso = 'medio';
+    else peso = 'alto';
+    return peso
+}
