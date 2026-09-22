@@ -2,10 +2,24 @@ h1 {
     text-align: center;
 }
 
+.form {
+    display: flex;
+    gap: 10px;
+}
+
+.texto {
+    flex: 1;
+}
+
+.min {
+    flex: 0 0 10%;
+}
+
 input {
     padding: 10px;
     width: 70%;
 }
+
 
 li{
     margin-top: 10px;
