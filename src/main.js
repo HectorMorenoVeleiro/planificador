@@ -4,6 +4,7 @@
 import { formatearFecha } from "./utils";
 import "./style.css";
 import.meta.env.VITE_VERSION;
+import confetti from "canvas-confetti";
 
 // creamos boton para guardar la acción
 const boton = document.getElementById("Add");
@@ -20,6 +21,7 @@ function saveAction() {
     li.textContent = fechaHoy + ": " + input.value + " "; // valor del input y la fecha en el li
     list.appendChild(li); // añadimos el li a la lista
     input.value = ''; // limpiamos el input
+    confetti();
 }
 
 //añadir confeti cuando se guarde un texto
