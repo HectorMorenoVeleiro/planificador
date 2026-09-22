@@ -12,16 +12,16 @@ const input = document.getElementById("input");
 const list = document.getElementById("list");
 
 // le añadimos un listener al boton para ejecute la función saveAction
-boton.addEventListener("click", saveAction);
+boton.addEventListener("click", e => saveAction(e));
 
 // función que se ejecuta al hacer click en el boton
-function saveAction() {
+function saveAction(e) {
+    e.preventDefault(e);
     const fechaHoy = formatearFecha(new Date()); // fecha de hoy formato DD/MM/YYYY
     const li = document.createElement("li");// creamos un elemento li
     li.textContent = fechaHoy + ": " + input.value + " "; // valor del input y la fecha en el li
     list.appendChild(li); // añadimos el li a la lista
     input.value = ''; // limpiamos el input
-    confetti();
+    confetti(); //añadir confeti cuando se guarde un texto
 }
 
-//añadir confeti cuando se guarde un texto
