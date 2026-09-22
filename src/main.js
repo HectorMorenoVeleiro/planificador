@@ -9,6 +9,7 @@ import confetti from "canvas-confetti";
 // creamos boton para guardar la acción
 const boton = document.getElementById("Add");
 const input = document.getElementById("input");
+const inputMin = document.getElementById("min");
 const list = document.getElementById("list");
 
 // le añadimos un listener al boton para ejecute la función saveAction
@@ -19,6 +20,11 @@ function saveAction(e) {
     e.preventDefault(e);
     const fechaHoy = formatearFecha(new Date()); // fecha de hoy formato DD/MM/YYYY
     const li = document.createElement("li");// creamos un elemento li
+    const minutos = inputMin.value;
+    let peso;
+    if (minutos < 10) peso = 'bajo';
+    else if (minutos < 30) peso = 'medio';
+    else peso = 'alto';
     li.textContent = fechaHoy + ": " + input.value + " "; // valor del input y la fecha en el li
     list.appendChild(li); // añadimos el li a la lista
     input.value = ''; // limpiamos el input
