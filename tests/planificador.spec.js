@@ -13,6 +13,6 @@ test('Vamos a añadir una nueva actividad', async({page})=> {
     await page.getByPlaceholder('60 min').fill('5')
     await page.getByRole('button', {name: 'Añadir'}).click()
     await expect(
-        page.getByText('Cantar')
-    )
+        page.getByText(/Cantar/)
+    ).toBeVisible()
 })
