@@ -25,6 +25,7 @@ function saveAction(e) {
     li.textContent = fechaHoy + ': ' + input.value + ' ' + minutos + ' ' + peso; // valor del input y la fecha en el li
     list.appendChild(li); // añadimos el li a la lista
     input.value = ''; // limpiamos el input
+    inputMin.value = '';
     confetti(); //añadir confeti cuando se guarde un texto
 }
 
