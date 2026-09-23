@@ -14,7 +14,10 @@
     "netlify:dev": "netlify dev",
     "lint": "eslint .",
     "format": "prettier --write",
-    "format:check": "prettier --check. "
+    "format:check": "prettier --check. ",
+    "e2e": "playwright test tests",
+    "e2e:ui": "playwright test tests --ui",
+    "e2e:headed": "playwright test tests --headed"
   },
   "devDependencies": {
     "@playwright/test": "^1.63.0",
