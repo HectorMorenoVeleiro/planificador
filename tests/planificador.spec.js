@@ -15,4 +15,7 @@ test('Vamos a añadir una nueva actividad', async({page})=> {
     await expect(
         page.getByText(/Cantar/)
     ).toBeVisible()
+    await expect(
+        page.getByText(/5 \(Baja\)/)
+    ).toBeVisible()
 })
