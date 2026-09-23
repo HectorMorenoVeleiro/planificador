@@ -1,7 +1,7 @@
 // src/main.js
 // Lenguaje no tipado
 
-import { formatearFecha } from "./utils";
+import { calcularPeso, formatearFecha } from "./utils";
 import "./style.css";
 import.meta.env.VITE_VERSION;
 import confetti from "canvas-confetti";

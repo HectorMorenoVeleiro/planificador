@@ -7,8 +7,8 @@ export function formatearFecha(fecha) {
 
 export function calcularPeso(valor) {
     let peso;
-    if (minutos < 10) peso = 'bajo';
-    else if (minutos < 30) peso = 'medio';
+    if (valor < 10) peso = 'bajo';
+    else if (valor < 30) peso = 'medio';
     else peso = 'alto';
     return peso
 }
